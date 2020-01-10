@@ -17,3 +17,7 @@ variable "db_pass" {
 variable "security_groups" {
   type = list(string)
 }
+
+variable "db_name_final_snapshot" {
+  type = string 
+}
