@@ -42,7 +42,7 @@ resource "aws_cloudfront_distribution" "netbox-instance" {
     max_ttl                = 86400
   }
 
-  cache_behavior {
+  ordered_cache_behavior {
     path_pattern     = "assets/*"
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]

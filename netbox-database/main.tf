@@ -10,7 +10,7 @@ resource "aws_db_instance" "netbox-database" {
   password                = var.db_pass
   backup_retention_period = 120
   vpc_security_group_ids    = var.security_groups
-  final_snapshot_identifier = "${var.db_name}-final-snapshot"
+  final_snapshot_identifier = var.db_name_final-snapshot
 
 #lifecycle {
 #    prevent_destroy = true
